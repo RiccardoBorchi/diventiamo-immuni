@@ -1,0 +1,191 @@
+// main: ../style.scss
+
+/* NAVIGATION BAR */
+
+.navbar {
+   width: 100%;
+   height: 100px;
+   padding: 0;
+   z-index: 999;
+   background-color: $white;
+   box-shadow: 0 0 15px rgba(200, 200, 200, 0.3);
+   transition: all 0.5s ease-in-out;
+
+   .navbar-brand {
+      color: $primary;
+      font-family: $font-heading;
+      font-size: 2rem;
+      font-weight: $font-extra-bold;
+      line-height: decimal-round($line-height * 0.7, 1);
+      letter-spacing: 0.1rem;
+      padding: 0;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+         color: $secondary;
+      }
+
+      img {
+         display: block;
+         max-width: 200px;
+         max-height: 80px;
+         vertical-align: middle;
+         transition: all 0.3s ease-in-out;
+      }
+   }
+
+   .navbar-collapse {
+      .navbar-nav {
+         .nav-item {
+            padding: 0 1rem;
+
+            .nav-link {
+               font-size: 1.2rem;
+               font-family: $font-heading;
+               font-weight: $font-semi-bold;
+               line-height: decimal-round($line-height * 0.7, 1);
+               letter-spacing: 0.05rem;
+               text-transform: uppercase;
+               color: $dark;
+               padding: 0;
+               align-items: center;
+               display: flex;
+
+               &:hover {
+                  color: $primary;
+               }
+            }
+
+            &:before {
+               content: none;
+            }
+
+            &:first-of-type {
+               padding-left: 0;
+            }
+
+            &:last-of-type {
+               padding-right: 0;
+            }
+         }
+      }
+   }
+
+   &.navbar-small {
+      .navbar-brand {
+         font-size: 1.5rem;
+
+         i {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+         }
+
+         img {
+            -webkit-filter: brightness(1) invert(0);
+            filter: brightness(1) invert(0);
+            max-height: 40px;
+         }
+      }
+
+      .navbar-collapse {
+         .navbar-nav {
+            .nav-item {
+               .nav-link {
+                  font-size: 1rem;
+               }
+            }
+         }
+      }
+
+      .header-icons {
+         margin-left: 2rem;
+
+         .header-socials .social:first-of-type {
+            margin-left: 2rem;
+         }
+
+         .header-socials .social {
+            padding: 0 1rem;
+
+            i {
+               font-size: 1rem;
+            }
+         }
+      }
+   }
+
+   &.hide {
+      transform: translateY(-100%);
+   }
+}
+
+.navbar-toggler {
+   height: 100%;
+   padding: 0;
+   border: 0;
+   border-radius: 0;
+   background-color: transparent;
+   position: relative;
+   transition: all 0.3s ease-in-out;
+
+   &:focus {
+      outline: none;
+   }
+
+   span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin-bottom: 10px;
+      background-color: $dark;
+      transition: all 0.3s ease-in-out;
+
+      &:first-of-type {
+         background-color: $green;
+      }
+
+      &:last-of-type {
+         background-color: $red;
+         margin-bottom: 0;
+      }
+   }
+
+   &:not(.collapsed) span:nth-child(1), &:not(.collapsed) span:nth-child(3) {
+      width: 20px;
+   }
+}
+
+/* Header Icons */
+
+.navbar .header-icons {
+   display: table-cell;
+   vertical-align: middle;
+   margin-left: 2rem;
+
+   .header-socials {
+      display: inline;
+      border-left: 1px solid $separator-color;
+   }
+
+   .header-socials .social:first-of-type {
+      margin-left: 2rem;
+   }
+
+   .header-socials .social {
+      padding: 0 1rem;
+
+      i {
+         font-size: 1.2rem;
+      }
+
+      &:first-of-type {
+         padding-left: 0;
+      }
+
+      &:last-of-type {
+         padding-right: 0;
+      }
+   }
+}

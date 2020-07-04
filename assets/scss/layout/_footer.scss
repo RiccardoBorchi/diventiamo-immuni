@@ -1,0 +1,128 @@
+// main: ../style.scss
+
+.site-footer {
+   background-color: $primary;
+   color: $white;
+   padding: 2rem 0;
+   margin-top: 7.5rem;
+
+   p {
+      font-size: 1rem;
+
+      img {
+         margin-bottom: 0;
+      }
+   }
+
+   a {
+      font-size: 1rem;
+
+      &.social {
+         font-size: 1.2rem;
+         margin-right: 25px;
+      }
+   }
+
+   img {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+   }
+
+   .widget-title {
+      font-size: 1.5rem;
+      color: $white;
+   }
+
+   ul {
+      list-style: none;
+      margin: 0;
+
+      li {
+         padding-left: 0;
+
+         &:before {
+            content: none;
+         }
+      }
+   }
+
+   .menu a {
+      text-transform: uppercase;
+   }
+
+   input, textarea {
+      background-color: transparent;
+      border-color: $white;
+   }
+
+   .copyright {
+      background-color: $dark;
+      padding: 2rem 0;
+      text-align: center;
+
+      p {
+         font-size: 0.8rem;
+         text-align: center;
+         margin-bottom: 0;
+
+         &:first-of-type {
+            font-size: 0.9rem;
+            font-weight: $font-semi-bold;
+            text-transform: uppercase;
+         }
+
+         .material-icons {
+            font-size: 1rem;
+            position: relative;
+            top: 0.25rem;
+         }
+      }
+
+      a {
+         font-size: 0.8rem;
+
+         &:hover {
+            color: $primary;
+         }
+      }
+
+      .iubenda-ibadge {
+         margin-top: 1rem;
+      }
+   }
+}
+
+.back-to-top {
+   display: none;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+
+   a {
+      display: block;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $primary;
+      color: $white;
+
+      &:hover {
+         background-color: $secondary;
+         box-shadow: 0 0 30px 10px $separator-color;
+
+         i {
+            color: $white;
+         }
+      }
+
+      i {
+         color: $white;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-size: 1.2rem;
+      }
+   }
+}
