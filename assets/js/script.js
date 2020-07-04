@@ -10,6 +10,34 @@ jQuery(function($) {
    });
 
    /*---------------------*/
+	/* MAIN NAVIGATION     */
+	/*---------------------*/
+
+	var position = win.scrollTop();
+
+	function scrollNavbar() {
+		var scroll = win.scrollTop();
+		if(scroll > position) { // Scroll Down
+			if(scroll > 0) {
+				$('.navbar').css('top', '-150px');
+			}
+		}
+		if(scroll < position) { // Scroll Up
+			if(scroll > 0) {
+				$('.navbar').addClass('navbar-small');
+				$('.navbar').css('top', '0');
+			}else{
+				$('.navbar').removeClass('navbar-small');
+			}
+		}
+		position = scroll;
+	}
+
+	win.on('scroll', function() {
+		scrollNavbar();
+	});
+
+   /*---------------------*/
    /* SCROLL TO TOP       */
    /*---------------------*/
 
