@@ -58,8 +58,9 @@
 
                &.btn {
                   color: $white;
+                  font-size: 0.9rem;
                   font-weight: $font-semi-bold;
-                  padding: 1rem 3rem;
+                  padding: 1rem 1.5rem;
                }
             }
 
@@ -97,8 +98,8 @@
                   font-size: 1rem;
 
                   &.btn {
-                     padding: 1rem 1.5rem;
-                     font-size: 0.9rem;
+                     padding: 1rem;
+                     font-size: 0.8rem;
                   }
                }
             }

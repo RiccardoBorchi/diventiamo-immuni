@@ -11,7 +11,7 @@ body {
    color: $text-color;
    background-color: $background-color;
    overflow-x: hidden;
-   padding-top: 100px;
+   padding-top: 50px;
 }
 
 ::-moz-selection {
@@ -69,6 +69,10 @@ p {
 
    + h1, + h2, + h3, + h4, + h5, + h6 {
       margin-top: 2rem;
+   }
+
+   + .btn {
+      margin-top: 1rem;
    }
 
    &.lead {

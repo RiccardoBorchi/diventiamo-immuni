@@ -1,7 +1,12 @@
 // main: ../style.scss
 
 .site-footer {
-   padding: 2rem 0;
+   padding: 3rem 0;
+
+   p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+   }
 }
 
 .back-to-top {
@@ -37,4 +42,8 @@
          font-size: 1.2rem;
       }
    }
+}
+
+.iubenda-ibadge {
+   margin-top: 1rem;
 }

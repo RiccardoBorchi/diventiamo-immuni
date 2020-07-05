@@ -12714,6 +12714,11 @@ i {
    margin-bottom: 2rem;
 }
 
+.team p {
+   max-width: 70%;
+   margin: 0 auto;
+}
+
 .main-top img {
    -webkit-animation: animation 3s infinite;
    animation: animation 3s infinite;
@@ -13419,8 +13424,9 @@ i {
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.btn {
    color: #fff;
+   font-size: 0.9rem;
    font-weight: 600;
-   padding: 1rem 3rem;
+   padding: 1rem 1.5rem;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item:before {
@@ -13453,8 +13459,8 @@ i {
 }
 
 .navbar.navbar-small .navbar-collapse .navbar-nav .nav-item .nav-link.btn {
-   padding: 1rem 1.5rem;
-   font-size: 0.9rem;
+   padding: 1rem;
+   font-size: 0.8rem;
 }
 
 .navbar.navbar-small .header-icons {
@@ -13520,7 +13526,12 @@ i {
 }
 
 .site-footer {
-   padding: 2rem 0;
+   padding: 3rem 0;
+}
+
+.site-footer p {
+   font-size: 0.9rem;
+   margin-bottom: 0.5rem;
 }
 
 .back-to-top {
@@ -13556,6 +13567,10 @@ i {
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 1.2rem;
+}
+
+.iubenda-ibadge {
+   margin-top: 1rem;
 }
 
 /* BUTTONS */
@@ -13632,6 +13647,10 @@ i {
    box-shadow: none;
 }
 
+.fb-share-button {
+   margin-bottom: 1rem;
+}
+
 /* TYPOGRAPHY */
 body {
    font-family: "Poppins";
@@ -13642,7 +13661,7 @@ body {
    color: #2F4F75;
    background-color: #F9F9FF;
    overflow-x: hidden;
-   padding-top: 100px;
+   padding-top: 50px;
 }
 
 ::-moz-selection {
@@ -13701,6 +13720,10 @@ p b, p strong {
 
 p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
    margin-top: 2rem;
+}
+
+p + .btn {
+   margin-top: 1rem;
 }
 
 p.lead {
