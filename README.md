@@ -2,7 +2,7 @@
 
 "<strong>Diventiamo Immuni</strong>" è un progetto nato per incoraggiare le persone a scaricare l'App <strong>Immuni</strong> e contrastare la disinformazione che circola intorno all'App.
 
-www.immuni.curaitalia.it/
+www.immuni.curaitalia.it
 
 <hr>
 
