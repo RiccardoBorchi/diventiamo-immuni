@@ -2,7 +2,7 @@
 
 /* BUTTONS */
 
-.btn, .wp-block-button__link, .wp-block-file .wp-block-file__button, .wp-block-search__button, input[type="submit"] {
+.btn {
    display: inline-block;
    vertical-align: middle;
    border-radius: 0;
@@ -12,7 +12,7 @@
    text-align: center;
    text-transform: uppercase;
    font-family: $font-heading;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    font-weight: $font-semi-bold;
    line-height: decimal-round($line-height * 0.7, 1);
    color: $white;
@@ -36,22 +36,22 @@
 
    &.btn-xl {
       padding: 1.5rem 5rem;
-      font-size: 1.3em;
+      font-size: 1.3rem;
    }
 
    &.btn-lg {
       padding: 1.5rem 4rem;
-      font-size: 1.2em;
+      font-size: 1.2rem;
    }
 
    &.btn-sm {
       padding: 1rem 2rem;
-      font-size: 1em;
+      font-size: 1rem;
    }
 
    &.btn-xs {
       padding: 1rem 1.5rem;
-      font-size: 0.9em;
+      font-size: 0.9rem;
    }
 
    i {
@@ -60,9 +60,7 @@
    }
 }
 
-.primary-bg .btn, .primary-bg .btn, .secondary-bg .btn, .dark-bg .btn, .background-overlay ~ * .btn,
-.primary-bg input[type="submit"], .primary-bg input[type="submit"], .secondary-bg input[type="submit"], .dark-bg input[type="submit"], .background-overlay ~ * input[type="submit"],
-.sticky .btn, .rev-btn {
+.primary-bg .btn, .primary-bg .btn, .secondary-bg .btn, .dark-bg .btn {
    color: $white;
    background: none;
    background-color: transparent;
@@ -75,55 +73,4 @@
       border: 3px solid $white;
       box-shadow: none;
    }
-}
-
-.wp-block-button.is-style-outline .wp-block-button__link {
-   color: $primary;
-   background: none;
-   border: 3px solid $primary;
-
-   &:hover {
-      color: $white;
-      background-color: $primary;
-      border: 3px solid $primary;
-   }
-}
-
-button[type="submit"]:hover {
-   box-shadow: none;
-}
-
-.btn-link {
-   display: inline-block;
-   background-color: $primary;
-   color: $white;
-   border-radius: 5px;
-   padding: 0.5rem 1rem;
-   margin: 1rem 0 0 1rem;
-   text-transform: uppercase;
-   font-weight: $font-semi-bold;
-   letter-spacing: 0.01rem;
-
-   &:hover {
-      background-color: $secondary;
-      color: $white;
-      text-decoration: none;
-
-      i {
-         color: $white;
-      }
-   }
-
-   &:first-of-type {
-      margin-left: 0;
-   }
-
-   i {
-      margin-right: 0.5rem;
-   }
-}
-
-.fb-share-button.fb_iframe_widget {
-   display: block;
-   margin-bottom: 1rem;
 }

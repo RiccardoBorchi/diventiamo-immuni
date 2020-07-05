@@ -5,8 +5,15 @@ jQuery(function($) {
 	var win = $(window);
 	var doc = $(document);
 
+	doc.ready(function () {
+		if(position >= 150) {
+			$('.navbar').addClass('navbar-small');
+		}
+	});
+
    $('.navbar').localScroll({
-      target: $('.navbar').attr('id')
+      target: $('.navbar').attr('id'),
+		duration: 2000
    });
 
    /*---------------------*/
