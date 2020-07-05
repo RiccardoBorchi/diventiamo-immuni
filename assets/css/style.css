@@ -12716,7 +12716,7 @@ i {
 
 .team p {
    max-width: 70%;
-   margin: 0 auto;
+   margin: 1.5rem auto;
 }
 
 .main-top img {
@@ -12900,35 +12900,6 @@ i {
    text-transform: uppercase;
 }
 
-/* Box */
-.box {
-   width: 100%;
-   padding: 2rem 1rem;
-   margin: 0.5rem 0;
-   background-color: #fff;
-   box-shadow: 0 0 15px rgba(200, 200, 200, 0.3);
-   border-radius: 5px;
-   cursor: pointer;
-   position: relative;
-   transition: all 0.3s ease-in-out;
-}
-
-.box:hover {
-   box-shadow: 0 0 30px rgba(200, 200, 200, 0.3);
-   transform: scale(1.05);
-}
-
-.box .content .title {
-   font-size: 1.2rem;
-   line-height: 1.8;
-   margin-bottom: 0;
-   text-transform: uppercase;
-}
-
-.box .content p {
-   font-size: 1rem;
-}
-
 /* Heading */
 .heading .subtitle {
    color: #5751FF;
@@ -12953,11 +12924,6 @@ i {
    margin-top: 2rem;
 }
 
-.heading .fas {
-   font-size: 2rem;
-   margin-bottom: 1.5rem;
-}
-
 .heading ul {
    width: 80%;
 }
@@ -12973,20 +12939,6 @@ i {
 
 .heading + .btn {
    margin-top: 2.5rem;
-}
-
-.heading.banner .subtitle {
-   font-size: 1.5rem;
-   letter-spacing: 0.3rem;
-}
-
-.heading.small-banner {
-   padding: 1rem 0;
-}
-
-.heading.small-banner p {
-   font-size: 0.8rem;
-   line-height: 1.4;
 }
 
 .primary-bg .heading .subtitle, .secondary-bg .heading .subtitle, .dark-bg .heading .subtitle {
