@@ -8,4 +8,4 @@ www.immuni.curaitalia.it
 
 Per informazioni precise, puntuali e aggiornate in merito all'App Immuni fare riferimento al sito ufficiale: https://www.immuni.italia.it/
 
-Le immagini sono prese dal sito ufficiale di Immuni: https://www.immuni.italia.it/press.html
+Le immagini relative all'App Immuni sono prese dal sito ufficiale di Immuni: https://www.immuni.italia.it/press.html
